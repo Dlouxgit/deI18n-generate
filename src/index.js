@@ -16,8 +16,8 @@ const instance = axios.create({
 const rootUrl = process.argv[2]
 const apiUrl = `${rootUrl}/i18n-json`
 const appName = process.argv[3]
-const expand = process.argv[4] === 'expand' ? '&expand=1' : ''
-const split = process.argv[5] === 'split'
+const expand = process.argv.includes('expand') ? '&expand=1' : ''
+const split = process.argv.includes('split')
 
 if (!rootUrl || !appName) {
   throw new Error('rootUrl 和 appName 都必须通过命令行参数传入')

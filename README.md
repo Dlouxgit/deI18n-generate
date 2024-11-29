@@ -8,6 +8,15 @@
 
 a dei18n plugin for dei18n platform
 
+## 使用示例
+
+```bash
+deI18n-generate src/index.js https://192.168.0.24:7999 saas-royalty-manager-f2e expand split
+deI18n-generate src/index.js https://192.168.0.24:7999 saas-royalty-manager-f2e expand
+deI18n-generate src/index.js https://192.168.0.24:7999 saas-royalty-manager-f2e split
+deI18n-generate src/index.js https://192.168.0.24:7999 saas-royalty-manager-f2e
+```
+
 ## License
 
 [MIT](./LICENSE) License © 2024-PRESENT [Dlouxgit](https://github.com/Dlouxgit)
